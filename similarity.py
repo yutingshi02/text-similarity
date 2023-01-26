@@ -285,39 +285,7 @@ class TextModel:
             print(self.name, ' could have come from either source.')
             
 
-def run_tests():
-    """ test code, with names of our articles/files"""
-    source1 = TextModel('CNN')
-    source1.add_file('CNNarticle.txt')
 
-    source2 = TextModel('Washington Post')
-    source2.add_file('washingtonposttrumptwitter.txt')
-    
-    print('Onion Elon Christmas Article')
-    new1 = TextModel('Onion 1')
-    new1.add_file('elonchristmasarticle.txt')
-    new1.classify(source1, source2)
-    
-    print()
-    print('Onion Economic Article: ')
-    
-    new2 = TextModel('Onion 2')
-    new2.add_file('economicarticle.txt')
-    new2.classify(source1, source2) 
-    
-    print()
-    print('NBC Twitter Article:')
-    
-    new3 = TextModel('NBC')
-    new3.add_file('nbcnews.txt')
-    new3.classify(source1, source2) 
-    
-    print()
-    print('TMZ Twitter Article')
-    
-    new4 = TextModel('TMZ')
-    new4.add_file('tmz.txt')
-    new4.classify(source1, source2) 
     
     
     
